@@ -1,0 +1,35 @@
+{
+  "name": "@electron-forge/plugin-koffi",
+  "version": "1.0.0",
+  "description": "Koffi plugin for Electron Forge",
+  "homepage": "https://github.com/rhy3h/electron-forge-plugin-koffi#readme",
+  "bugs": {
+    "url": "https://github.com/rhy3h/electron-forge-plugin-koffi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhy3h/electron-forge-plugin-koffi.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "koffi"
+  ],
+  "author": "rhy3h",
+  "main": "dist/KoffiPlugin.js",
+  "typings": "dist/KoffiPlugin.d.ts",
+  "scripts": {
+    "build": "rimraf dist && rimraf ./node_modules/.cache && npx tsc -b"
+  },
+  "dependencies": {
+    "@electron-forge/plugin-base": "7.6.0",
+    "@electron-forge/shared-types": "7.6.0"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "devDependencies": {
+    "@types/listr": "^0.14.9",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  }
+}

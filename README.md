@@ -1,6 +1,6 @@
 # Plugin Koffi
 
-[![npm](https://img.shields.io/npm/v/@electron-forge/plugin-koffi.svg)](https://www.npmjs.com/package/@electron-forge/plugin-koffi) 
+[![npm](https://img.shields.io/npm/v/electron-forge-plugin-koffi.svg)](https://www.npmjs.com/package/electron-forge-plugin-koffi) 
 
 Currently, when packaging `koffi`, all platform-specific `koffi.node` files are included in the bundlers. Therefore, the purpose of this plugin is to remove unused native modules.
 

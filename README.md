@@ -13,13 +13,13 @@ However, when not in use, the maximum bundle size possible with `fflate` is appr
 // forge.config.js
 
 {
-  name: '@electron-forge/plugin-koffi',
+  name: 'electron-forge-plugin-koffi',
   config: {}
 }
 
 // or
 
-import { KoffiPlugin } from '@electron-forge/plugin-koffi'
+import { KoffiPlugin } from 'electron-forge-plugin-koffi'
 
 const forgeConfig = {
   plugins: [

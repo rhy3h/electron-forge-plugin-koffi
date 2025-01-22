@@ -1,6 +1,6 @@
 {
   "name": "electron-forge-plugin-koffi",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Koffi plugin for Electron Forge",
   "homepage": "https://github.com/rhy3h/electron-forge-plugin-koffi#readme",
   "bugs": {

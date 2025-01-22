@@ -15,7 +15,6 @@ export default class KoffiPlugin extends PluginBase<KoffiConfig> {
       packageAfterPrune
     };
   }
-
 }
 
 export { KoffiPlugin, KoffiConfig, packageAfterPrune };

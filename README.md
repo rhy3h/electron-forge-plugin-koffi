@@ -9,6 +9,8 @@ However, when not in use, the maximum bundle size possible with `koffi` is appro
 
 **Note:** `Koffi Plugin` will have no effect if your `packagerOptions.prune` option is set to `false`.
 
+## Plugin method
+
 ```js
 // forge.config.js
 
@@ -25,5 +27,28 @@ const forgeConfig = {
   plugins: [
     new KoffiPlugin({})
   ]
+}
+```
+
+However, when you use this plugin together with [VitePlugin](https://www.npmjs.com/package/@electron-forge/plugin-vite) or [WebpackPlugin](https://www.npmjs.com/package/@electron-forge/plugin-webpack) and run electron-forge start, it will result in:
+
+`Multiple plugins tried to take control of the start command, please remove one of them`
+
+There is already an [issue](https://github.com/electron/forge/issues/3652) on GitHub regarding this.
+
+To avoid this issue, this plugin provides hooks for injection.
+
+## Hook method
+
+```js
+// forge.config.js
+
+import { packageAfterPrune } from 'electron-forge-plugin-koffi'
+
+const forgeConfig = {
+  hooks: {
+    // @ts-expect-error
+    packageAfterPrune
+  }
 }
 ```
